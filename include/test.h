@@ -37,9 +37,7 @@
  *
  * To run the tests, compile the tests as a binary and run it.
  *
- * Project home page: http://github.com/joewalnes/tinytest
- *
- * 2010, -Joe Walnes <joe@walnes.com> http://joewalnes.com
+ * Project home page: http://github.com/finwo/c-assert
  */
 
 #ifndef __TINYTEST_INCLUDED_H__
@@ -47,6 +45,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /* Main assertion method */
 #define ASSERT(msg, expression) if (!tap_assert(__FILE__, __LINE__, (msg), (#expression), (expression) ? 1 : 0)) return
